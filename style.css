@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #1e293b;
+}
+
+/* Main Container */
+.main-box {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Both Boxes Equal Width */
+.first-box,
+.second-box {
+  flex: 1;
+}
+
+/* Left Side */
+.first-box {
+  padding: 50px;
+}
+
+/* Right Side */
+.second-box {
+  background: #0f172a;
+  color: white;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Heading */
+.logo-heading h4 {
+  font-size: 18px;
+  color: #6366f1;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.logo-heading h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.logo-heading p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dbe3ec;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Sections spacing */
+.billing,
+.email,
+.row {
+  margin-bottom: 25px;
+}
+
+/* Payment Tabs */
+.payment-details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.payment-details div {
+  padding: 12px 20px;
+  border: 1px solid #dbe3ec;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.payment-details div:hover {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+/* Row */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.cancel-btn:hover {
+  background: #cbd5e1;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+  background: #6366f1;
+  color: white;
+  flex: 1;
+}
+
+.subscribe-btn:hover {
+  background: #4f46e5;
+}
+
+/* Pricing Summary */
+.pricing-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Plan Cards */
+.plan-option {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: 0.3s ease;
+}
+
+.plan-option.active {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.plan-option input {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+}
+
+.plan-option h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.plan-option p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* Total */
+.total {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 18px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total h3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.total h2 {
+  font-size: 30px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main-box {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
